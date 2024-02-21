@@ -35,7 +35,7 @@ html{
 .mainbg
 {
     background: linear-gradient(#1C1F27,#2C2746);
-    height: 3500px;
+    height: 3300px;
     width: 100%;
 }
 
@@ -157,7 +157,7 @@ p
 
   .skill{
     margin-top: 20px;
-    height: 1500px;
+    height: 1200px;
     width: 100%;
     display: flex;
     justify-content: center;
