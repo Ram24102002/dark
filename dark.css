@@ -1,0 +1,244 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+.scroll-watcher
+{
+    height: 5px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(230, 242, 155);
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+    to{scale: 1 1;}
+}
+
+.navbar
+{
+    background-color: #1C1F27;
+}
+
+.mainbg
+{
+    background: linear-gradient(#1C1F27,#2C2746);
+    height: 3500px;
+    width: 100%;
+}
+
+.mainarea
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frontabout
+{
+    height: 300px;
+    font-size: large;
+    margin-top: 200px;
+}
+
+.name
+{
+    color: rgb(254,254,255);
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+p
+{
+    color: rgb(126,124,148);
+}
+
+.butt
+{
+    color: red solid;
+    font-family: 'Protest Guerrilla', sans-serif;
+    padding: 10px;
+}
+
+#exploresec
+{
+    margin-top: 250px;
+    
+}
+
+.codebox
+{
+    height: 500px;
+    width: 700px;
+}
+
+
+   
+
+
+.card
+{
+    
+    background-color: rgb(31,34,38);
+}
+
+#helloworld
+{
+    overflow: hidden;
+    border-right: .1em solid orange;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    width: 200px;
+    animation: typing 50s forwards;
+}
+
+
+/* .container{
+    display: inline-block;
+    font-family: "arial";
+    font-size: 24px;
+  }
+   */
+  
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+
+  .eatsec
+  {
+    margin-top: 200px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .eat
+  {
+    height: 500px;
+    width: 80%; 
+  }
+
+  .eatsec > .eat
+  {
+    scale: .8; opacity: 0;
+    animation: fade-in linear forwards;
+    /* animation: fade-out linear backwards; */
+    animation-timeline: view();
+    /* animation-range: start 100px */
+    /* animation-range: end 100px; */
+    animation-range:  50px 600px;
+    /* animation-range-end: contain; */
+  }
+  
+  @keyframes fade-in {
+      /* from{scale: .8;opacity: 0;} */
+      to{scale: 1; opacity: 1;}
+  } 
+
+
+  /* skill */
+
+  .skill{
+    margin-top: 20px;
+    height: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+
+
+.skillaside
+{
+    height: 750px;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.skill-h
+{
+    margin: 40px;
+}
+
+  #cards
+  {
+    height: 200px;
+    margin-top: 20px;
+  }
+
+
+
+  @media all and (max-width:600px)
+{
+    
+
+    #cards
+    {
+        width: 50px;
+    }
+}
+    
+
+  @media all and (max-width:1000px)
+  {
+    .codebox
+    {
+        height: 300px;
+        width: 400px;
+        /* background-color: aliceblue; */
+    }
+    #helloworld
+    {
+        font-size: medium;
+    }
+    .eat
+    {
+        height: 350px;
+        width: 100%;
+    }
+    .skill
+    {
+        flex-direction: column-reverse;
+    }
+    .skillaside
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #cards
+    {
+        height: 100px;
+    }
+    .card-text
+    {
+        visibility: hidden;
+    }
+
+    .cardsubbody
+    {
+        
+    }
+}
