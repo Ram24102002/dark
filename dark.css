@@ -8,6 +8,12 @@ html{
     margin: 0;
 }
 
+/* .navbar-brand */
+.nav-brand
+{
+    writing-mode:vertical-lr;
+}
+
 .scroll-watcher
 {
     height: 5px;
@@ -32,6 +38,25 @@ html{
     background-color: #1C1F27;
 }
 
+.navbar-toggler
+{
+    float: top;
+}
+.nav-btn
+{
+    font-family: "Bebas Neue", sans-serif;
+    /* border: solid 5px; */
+    padding: 5px;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+
+
+
+
+/* main */
+
 .mainbg
 {
     background: linear-gradient(#1C1F27,#2C2746);
@@ -48,9 +73,10 @@ html{
 
 .frontabout
 {
+    margin-top: 100px;
     height: 300px;
     font-size: large;
-    margin-top: 200px;
+    /* margin-top: 200px; */
 }
 
 .name
@@ -193,8 +219,16 @@ p
 
   @media all and (max-width:600px)
 {
-    
-
+    .navbar-nav
+    {
+        /* margin-left: -50px; */
+        display: block;
+    }
+    .nav-item
+    {
+        margin-left: auto;
+        /* margin-left: -50px; */
+    }
     #cards
     {
         width: 50px;
