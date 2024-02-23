@@ -59,7 +59,7 @@ html{
 
 .mainbg
 {
-    background: linear-gradient(#1C1F27,#2C2746);
+    background: linear-gradient(#1C1F27,#2C2746,rgb(36,36,36));
     height: 3300px;
     width: 100%;
 }
@@ -275,4 +275,125 @@ p
     {
         
     }
+}
+
+
+
+
+
+/* social */
+
+.sociallinks 
+{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soheading
+{
+    height: 75px;
+    width: 100%;
+
+}
+
+.solicard
+{
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.socards
+{
+    width: 200px;
+    margin: 10px ;
+    background-color: white;
+}
+
+
+
+#socardscs
+{
+    width: 420px;
+    margin: 10px ;
+}
+
+
+
+@media all and (max-width:600px){
+
+    .sociallinks
+    {
+        flex-direction: column;
+        
+
+    }
+
+    .linkss
+    {
+        display: flex;
+        
+    }
+    .solicard
+    {
+        flex-direction: ;
+        margin-top: 40px;
+        
+    }
+    #socardscs
+    {
+        margin: 10px ;
+        
+    }
+
+    .socards
+    {
+        width: 170px;
+        height:75px;
+    }
+    #socardscs
+    {
+        width: 170px;
+    }
+    
+   
+
+}
+
+
+
+
+@media all and (min-width:1200px)
+{
+
+    #socardscs
+    {
+        /* width: 420px; */
+        
+        margin: 10px ;
+    
+    }
+
+
+    
+}
+
+
+/* footer */
+
+
+footer
+{
+    height: 635px;
+    background-image: url(footer-img.jpg);
+}
+
+a
+{
+    text-decoration: none;
 }
